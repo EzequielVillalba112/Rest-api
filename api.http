@@ -1,0 +1,32 @@
+### Recuperar las peliculas
+GET http://localhost:3000/movies
+
+### Recuperar pelicula por id
+GET http://localhost:3000/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+
+### Recuperar generos
+GET http://localhost:3000/movies?genre=drama
+
+### Recuperar por año de la pelicula
+GET http://localhost:3000/movies?year=1994
+
+### Crear pelicula
+POST http://localhost:3000/movies
+Content-Type: application/json
+
+{
+  "title": "MAESTRO",
+  "year": 1969,
+  "director": "Bradley Cooper",
+  "duration": 129,
+  "poster": "https://www.cinemacenter.com.ar/img_movies/2891_img2.jpg",
+  "genre": ["Drama"]
+}
+
+### Actualizr pelicula
+PATCH  http://localhost:3000/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+Content-Type: application/json
+
+{
+    "year": 1999
+}

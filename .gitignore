@@ -1,0 +1,44 @@
+# Ignorar archivos de configuración de sistema
+.DS_Store
+Thumbs.db
+
+# Ignorar archivos compilados
+*.log
+*.out
+*.pid
+*.seed
+*.db
+
+# Ignorar directorios y archivos generados por npm
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Ignorar archivos locales de configuración
+.env
+
+# Ignorar archivos de construcción
+/build/
+/dist/
+/out/
+
+# Ignorar archivos de dependencias de desarrollo
+/test/
+/tests/
+/*.test.js
+
+# Ignorar archivos de respaldo y temporales
+*.bak
+*.swp
+*~
+
+# Ignorar archivos de configuración de IDE
+.vscode/
+.idea/
+*.sublime-*
+
+# Ignorar archivos de dependencias de TypeScript
+*.tsbuildinfo
+
+# Ignorar archivos de registro de errores
+error.log
